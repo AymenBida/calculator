@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 - git clone `git@github.com:AymenBida/calculator.git`
 - cd into the `calculator`
 - run `npm install` to install dependencies
-- run `npm start` to run the app in development mode
+- run `npm run start` to run the app in development mode
 
 ### Prerequisites
 
