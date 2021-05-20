@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import './button.css';
 
 export default function Button(props) {
   const { name } = props;
   return (
-    <button type="button">{ name }</button>
+    <button type="button" className="button">{ name }</button>
   );
 }
 

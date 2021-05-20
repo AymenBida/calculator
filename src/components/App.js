@@ -1,12 +1,12 @@
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
-// import ButtonPanel from './ButtonPanel';
+import './app.css';
 
 export default function App() {
   return (
-    <>
+    <div className="app">
       <Display />
       <ButtonPanel />
-    </>
+    </div>
   );
 }
