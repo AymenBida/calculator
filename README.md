@@ -1,18 +1,23 @@
-## Title
+## Calculator
 
-> brief description
+> This is a calculator App that will be built with React
 
 ## Built With 
 
 - JavaScript, React, HTML5 and CSS
 
+## Live Demo
+
+To try the app follow [this link](https://bida-calculator.herokuapp.com/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- git clone `git@github.com:AymenBida/<repo>.git`
-- cd into the `<repo>`
-- open `index.html` 
+- git clone `git@github.com:AymenBida/calculator.git`
+- cd into the `calculator`
+- run `npm install` to install dependencies
+- run `npm start` to run the app in development mode
 
 ### Prerequisites
 
@@ -34,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AymenBida/<repo>/issues).
+Feel free to check the [issues page](https://github.com/AymenBida/calculator/issues).
 
 ## Acknowledgments
 
