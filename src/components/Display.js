@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import './display.css';
 
 export default function Display(props) {
   const { result } = props;
   return (
-    <div>{ result }</div>
+    <div className="display">{ result }</div>
   );
 }
 

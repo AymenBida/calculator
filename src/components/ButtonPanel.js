@@ -31,7 +31,7 @@ export default function ButtonPanel() {
       <div className="row">
         <Button name="0" />
         <Button name="." />
-        <Button name="=" />
+        <Button name="=" styling="button button--last" />
       </div>
     </>
   );
