@@ -7,6 +7,11 @@
   box-shadow: black 0 0 0 1px inset;
   color: rgb(39, 92, 39);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-break: anywhere;
+}
+
+.display--little {
+  font-size: 2em;
 }
 
 .display::selection {
