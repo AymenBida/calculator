@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
 import './display.css';
 
-export default function Display(props) {
-  const { result } = props;
+const TriggerLittle = (result) => {
+  if (result.length < 11) return 'display';
+
+  return 'display display--little';
+};
+
+export default function Display({ result }) {
   return (
-    <div className="display">{ result }</div>
+    <div className={TriggerLittle(result)}>{ result }</div>
   );
 }
 
