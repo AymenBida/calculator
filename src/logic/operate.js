@@ -25,7 +25,7 @@ export default function operate(numberOne, numberTwo, operation) {
   }
 
   if (operation === '%') {
-    return n1.div(new Big(100)).times(n2).toString();
+    return n1.div(new Big(100)).toString();
   }
 
   return n2.toString();
