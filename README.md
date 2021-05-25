@@ -1,6 +1,10 @@
 ## Calculator
 
-> This is a calculator App that will be built with React
+This is a simple calculator App built with React
+
+![screenshot](./public/screenshot.png)
+
+> You can use the simple operator buttons existing to do any simple math, the calculator supports big numbers thanks to the Big.js library
 
 ## Built With 
 
@@ -43,7 +47,7 @@ Feel free to check the [issues page](https://github.com/AymenBida/calculator/iss
 
 ## Acknowledgments
 
-If any
+- Big.js library
 
 ## Show your support
 
