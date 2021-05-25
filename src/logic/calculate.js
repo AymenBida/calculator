@@ -29,12 +29,20 @@ export default function calculate(calculator = {}, buttonName) {
     };
   }
 
+  if (buttonName === '%') {
+    return {
+      total: next ? total : operate(total, total, buttonName),
+      next: next ? operate(next, next, buttonName) : next,
+      operation,
+    };
+  }
+
   if (operation === null) {
     if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'].includes(buttonName)) {
       return { total: prepareNumber(total, buttonName), next: null, operation: null };
     }
 
-    if (['+', '-', 'x', '%', '÷'].includes(buttonName)) {
+    if (['+', '-', 'x', '÷'].includes(buttonName)) {
       return { total, next: null, operation: buttonName };
     }
   } else {
@@ -42,7 +50,7 @@ export default function calculate(calculator = {}, buttonName) {
       return { total, next: prepareNumber(next, buttonName), operation };
     }
 
-    if (['+', '-', 'x', '%', '÷', '='].includes(buttonName)) {
+    if (['+', '-', 'x', '÷', '='].includes(buttonName)) {
       if (total && next) {
         return { total: operate(total, next, operation), next: null, operation: buttonName };
       }
