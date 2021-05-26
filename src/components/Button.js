@@ -1,21 +1,19 @@
 import PropTypes from 'prop-types';
 import './button.css';
 
-export default function Button({ name, styling, clickHandler }) {
-  return (
-    <button
-      type="button"
-      className={styling}
-      onClick={() => clickHandler(name)}
-      onContextMenu={(e) => {
-        e.preventDefault();
-        clickHandler(name);
-      }}
-    >
-      { name }
-    </button>
-  );
-}
+const Button = ({ name, styling, clickHandler }) => (
+  <button
+    type="button"
+    className={styling}
+    onClick={() => clickHandler(name)}
+    onContextMenu={(e) => {
+      e.preventDefault();
+      clickHandler(name);
+    }}
+  >
+    { name }
+  </button>
+);
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
@@ -26,3 +24,5 @@ Button.propTypes = {
 Button.defaultProps = {
   styling: 'button',
 };
+
+export default Button;

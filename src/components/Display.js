@@ -7,11 +7,9 @@ const TriggerLittle = (result) => {
   return 'display display--little';
 };
 
-export default function Display({ result }) {
-  return (
-    <div className={TriggerLittle(result)}>{ result }</div>
-  );
-}
+const Display = ({ result }) => (
+  <div className={TriggerLittle(result)}>{ result }</div>
+);
 
 Display.propTypes = {
   result: PropTypes.string,
@@ -20,3 +18,5 @@ Display.propTypes = {
 Display.defaultProps = {
   result: '0',
 };
+
+export default Display;

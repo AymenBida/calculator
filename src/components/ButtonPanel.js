@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 import './buttonPanel.css';
 
-export default function ButtonPanel({ clickHandler }) {
+const ButtonPanel = ({ clickHandler }) => {
   const handleClick = (buttonName) => clickHandler(buttonName);
 
   return (
@@ -38,8 +38,10 @@ export default function ButtonPanel({ clickHandler }) {
       </div>
     </>
   );
-}
+};
 
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
+
+export default ButtonPanel;
