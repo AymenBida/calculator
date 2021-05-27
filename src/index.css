@@ -1,17 +1,4 @@
-body {
-  background-color: lightgray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-}
-
 #root {
-  height: 70%;
-  width: 70%;
-  min-height: 500px;
-  max-width: 400px;
-  min-width: 300px;
+  background-color: rgb(190, 255, 250);
+  height: 800px;
 }

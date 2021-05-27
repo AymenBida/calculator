@@ -15,9 +15,14 @@ const App = () => {
   const { total, next } = calculator;
 
   return (
-    <div className="app">
-      <Display result={next ?? total ?? undefined} />
-      <ButtonPanel clickHandler={handleClick} />
+    <div className="d-lg-flex justify-content-evenly">
+      <div className="fs-2 mb-4">Let&apos;s do some math !</div>
+      <div className="d-flex">
+        <div className="app">
+          <Display result={next ?? total ?? undefined} />
+          <ButtonPanel clickHandler={handleClick} />
+        </div>
+      </div>
     </div>
   );
 };
