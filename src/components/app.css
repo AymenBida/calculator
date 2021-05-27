@@ -4,4 +4,8 @@
   display: grid;
   border: 0.8em solid black;
   border-radius: 1em;
+  min-height: 450px;
+  max-height: 550px;
+  min-width: 300px;
+  max-width: 350px;
 }
