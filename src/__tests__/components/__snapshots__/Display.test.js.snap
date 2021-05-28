@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with "0" per default 1`] = `
+<div
+  className="display"
+>
+  0
+</div>
+`;
+
+exports[`renders correctly with "result" if given 1`] = `
+<div
+  className="display"
+>
+  177
+</div>
+`;
+
+exports[`renders correctly with a special class if the result is longer than 11 characters 1`] = `
+<div
+  className="display display--little"
+>
+  17716251456985
+</div>
+`;

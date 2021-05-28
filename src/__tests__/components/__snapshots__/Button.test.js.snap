@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with any string 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  type="button"
+>
+  aymen
+</button>
+`;
+
+exports[`renders correctly with the number "5" 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  type="button"
+>
+  5
+</button>
+`;
+
+exports[`renders correctly with the operator "+" 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  type="button"
+>
+  +
+</button>
+`;

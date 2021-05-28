@@ -14,9 +14,7 @@ const prepareNumber = (initial, next) => {
   return initial + next;
 };
 
-export default function calculate(calculator = {}, buttonName) {
-  const { total, next, operation } = calculator;
-
+const calculate = ({ total, next, operation }, buttonName) => {
   if (buttonName === 'AC') {
     return { total: '0', next: null, operation: null };
   }
@@ -58,5 +56,7 @@ export default function calculate(calculator = {}, buttonName) {
     }
   }
 
-  return calculator;
-}
+  return { total, next, operation };
+};
+
+export default calculate;

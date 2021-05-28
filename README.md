@@ -31,6 +31,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Install VSCode or any code editor you prefer
 
+### Test
+
+- run `npm test` to run automated tests
+
 # Author
 
 👤 **Aymen Bida**
